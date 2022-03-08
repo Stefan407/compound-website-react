@@ -90,7 +90,7 @@ body.lock {
 }
 
 main {
-  background: url('/img/main-bg.png') center;
+  background: url('img/main-bg.png') center;
   background-size: cover;
   min-height: 100vh
 }
@@ -371,7 +371,7 @@ section {
 }
 
 .protocol__img::before {
-  content: url('/img/protocol-img-1.png');
+  content: url('img/protocol-img-1.png');
   position: absolute;
   left: -25%;
   top: -20%;

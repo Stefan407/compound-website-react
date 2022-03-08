@@ -1,11 +1,10 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Image from "next/image";
+import Link from '@mui/material/Link';
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import ImageListItem from "@mui/material/ImageListItem";
+import { Img } from "react-image";
+import './App.css';
 
-const Home: NextPage = () => {
+const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [tenderActiveTab, setTenderActiveTab] = useState("institutions");
 
@@ -127,7 +126,7 @@ const Home: NextPage = () => {
             data-aos-duration="1000"
           >
             <div className="header__logo">
-              <img src="/img/logo.svg" alt="" />
+              <Img src="/img/logo.svg" />
             </div>
             <nav className="header__nav">
               <ul className="header__nav__menu">
@@ -170,7 +169,7 @@ const Home: NextPage = () => {
         <section className="hero__section">
           <span className="hero__sub-header">Welcome to</span>
           <div className="hero__img">
-            <img src="/img/hero-logo.png" alt="" />
+            <Img src="/img/hero-logo.png" alt="" />
           </div>
           <p className="hero__text" data-aos="fade-up" data-aos-delay="300">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -194,7 +193,7 @@ const Home: NextPage = () => {
         <div className="wrapper">
           <div className="protocol__container">
             <div className="protocol__img" data-aos="fade-right">
-              <img src="/img/protocol-img.png" alt="" />
+              <Img src="/img/protocol-img.png" alt="" />
             </div>
             <div className="protocol__text" data-aos="fade-left">
               <div className="section__header">Protocol</div>
@@ -210,7 +209,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="protocol__bg">
-          <img src="/img/background/protocol.png" alt="" />
+          <Img src="/img/background/protocol.png" alt="" />
         </div>
       </section>
       <section className="try__section">
@@ -237,7 +236,7 @@ const Home: NextPage = () => {
               (item, index) =>
                 item.tabs.includes(tenderActiveTab) && (
                   <div key={index} className="try__item">
-                    <img src={item.imgSrc} alt="" className="try__img-item" />
+                    <Img src={item.imgSrc} alt="" className="try__img-item" />
                     <div className="try__item-header">{item.title}</div>
                     <p className="try__item-text">{item.text}</p>
                   </div>
@@ -246,7 +245,7 @@ const Home: NextPage = () => {
           </div>
           <div className="try__container fade" id="content-2">
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum22</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -254,7 +253,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-2.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-2.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -262,7 +261,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -271,7 +270,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className="try__item">
-              <img src="/img/icon/try-2.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-2.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -279,7 +278,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -287,7 +286,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -297,7 +296,7 @@ const Home: NextPage = () => {
           </div>
           <div className="try__container fade" id="content-3">
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -305,7 +304,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-2.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-2.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum44</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -313,7 +312,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -322,7 +321,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className="try__item">
-              <img src="/img/icon/try-2.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-2.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -330,7 +329,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -338,7 +337,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -348,7 +347,7 @@ const Home: NextPage = () => {
           </div>
           <div className="try__container fade" id="content-4">
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -356,7 +355,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum44</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -364,7 +363,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -373,7 +372,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className="try__item">
-              <img src="/img/icon/try-2.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-2.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -381,7 +380,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-1.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-1.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -389,7 +388,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="try__item">
-              <img src="/img/icon/try-3.png" alt="" className="try__img-item" />
+              <Img src="/img/icon/try-3.png" alt="" className="try__img-item" />
               <div className="try__item-header">Lorem Ipsum</div>
               <p className="try__item-text">
                 Projects are well designed using Figma. You will get the design
@@ -399,10 +398,10 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="try__bg">
-          <img src="/img/background/try-1.png" alt="" />
+          <Img src="/img/background/try-1.png" alt="" />
         </div>
         <div className="try__bg2">
-          <img src="/img/background/try-2.png" alt="" />
+          <Img src="/img/background/try-2.png" alt="" />
         </div>
       </section>
       <section className="audit__section">
@@ -420,7 +419,7 @@ const Home: NextPage = () => {
             <div className="audit__item-block" data-aos="fade-left">
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-2.png" alt="" />
+                  <Img src="/img/audit-2.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -428,7 +427,7 @@ const Home: NextPage = () => {
               </div>
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-1.png" alt="" />
+                  <Img src="/img/audit-1.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -436,7 +435,7 @@ const Home: NextPage = () => {
               </div>
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-3.png" alt="" />
+                  <Img src="/img/audit-3.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -445,7 +444,7 @@ const Home: NextPage = () => {
 
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-4.png" alt="" />
+                  <Img src="/img/audit-4.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -453,7 +452,7 @@ const Home: NextPage = () => {
               </div>
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-2.png" alt="" />
+                  <Img src="/img/audit-2.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -461,7 +460,7 @@ const Home: NextPage = () => {
               </div>
               <div className="audit__item">
                 <div className="audit__img">
-                  <img src="/img/audit-1.png" alt="" />
+                  <Img src="/img/audit-1.png" alt="" />
                 </div>
                 <div className="audit__text">
                   <span>Securtiy Audit</span>
@@ -471,7 +470,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="bg__audit">
-          <img src="/img/background/audit.png" alt="" />
+          <Img src="/img/background/audit.png" alt="" />
         </div>
       </section>
       <section className="sub__section">
@@ -498,7 +497,7 @@ const Home: NextPage = () => {
         <div className="wrapper">
           <div className="footer__container">
             <div className="footer__logo">
-              <img src="/img/logo.png" alt="" />
+              <Img src="/img/logo.png" alt="" />
               <p className="footer__logo__cr">Copyright © 2021</p>
             </div>
             <div className="footer__column">
@@ -555,4 +554,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default App;
